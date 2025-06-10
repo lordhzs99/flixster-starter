@@ -8,7 +8,7 @@ const App = () => {
   const[movieList, setMovieList] = useState([]); // this state is gonna be retrieving the data from every page of the api
   const[pageNumber, setPageNumber] = useState(1); // this state is gonna be traveling among the pages value of the api 
   const[searchQuery, setSearchQuery] = useState(""); // 
-  const [searchResults, setSearchResults] = useState([]);
+  // const [searchResults, setSearchResults] = useState([]);
 
 
   const handleOnSearchResults = (event) => {
