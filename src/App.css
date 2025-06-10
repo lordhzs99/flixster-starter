@@ -1,17 +1,36 @@
+html, 
+body {
+  background-color: #434552fd;
+}
+
 .App {
   text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+  align-items: center;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: row;
+.appHeader {
   align-items: center;
   justify-content: space-evenly;
-  color: white;
+  color: #050502;
+  background-color: #e8e8e873;
   padding: 20px;
+  width: 1800px;
+  justify-self: center;
+  margin: 20px;
+  border: 1px solid #000000;
 }
 
+
+.varHeader {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+/* 
 @media (max-width: 600px) {
   .movie-card {
     width: 100%;
@@ -25,4 +44,4 @@
   .search-bar form {
     flex-direction: column;
   }
-}
+} */

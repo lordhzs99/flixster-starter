@@ -1,0 +1,15 @@
+/* .movieList {
+  display: grid;
+  grid-template-columns: repeat(5, 350px);
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.movieList {
+ display: grid;
+ grid-template-columns: repeat(5, minmax(300px, 1fr));
+ grid-template-rows: repeat(4, 400px);
+ justify-content: center;
+ gap: 15px;
+}
