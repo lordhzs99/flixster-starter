@@ -1,7 +1,7 @@
 import './MovieCard.css';
 import Modal from './Modal.jsx';
 import { useEffect, useState } from 'react';
-import notFoundImg from '../assets/not_found.jpg'; // ✅ Correct import
+import notFoundImg from '../assets/not_found.jpg'; 
 
 export default function MovieCard(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,7 @@ export default function MovieCard(props) {
                     src={
                         props.movie.poster_path
                             ? `https://image.tmdb.org/t/p/w500${props.movie.poster_path}`
-                            : notFoundImg // ✅ Use local fallback image
+                            : notFoundImg 
                     }
                     alt={props.movie.title}
                     style={{ width: '100%' }}
