@@ -1,0 +1,68 @@
+.modalBody {
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1000;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modalBody .upperPart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.overlayStyle { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1000;
+}
+
+.modalBody img {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.genresMovie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .modalBody {
+        padding: 10px;
+    }
+    .modalBody .upperPart {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modalBody {
+        padding: 5px;
+    }
+    .modalBody .upperPart {
+        gap: 5px;
+    }
+}
