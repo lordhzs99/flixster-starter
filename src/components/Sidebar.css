@@ -1,9 +1,15 @@
-.modalBody {
+.modalBodySideBar {
+    width: 200px; 
+    background: gold;
+    position: absolute; 
+    height: 95vh;
+    padding: 0 30px;
+    transition: all 1s; 
     display: flex;
     flex-direction: column;
     position: fixed; 
     top: 50%;
-    left: 50%;
+    left: 15vw;
     transform: translate(-50%, -50%); 
     background-color: hsl(210, 17%, 16%);
     padding: 20px;
@@ -13,12 +19,16 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 90%;
-    max-height: 90vh;
+    max-height: 100vh;
     overflow-y: auto;
     color: white;
 }
 
-.modalBody .upperPart {
+.btn {
+    border: 1px solid rgb(84, 65, 171); 
+}
+
+.modalBodySideBar .upperPartSideBar {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -26,7 +36,7 @@
     align-items: center;
 }
 
-.overlayStyle { 
+.overlayStyleSideBar { 
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -79,3 +89,12 @@
         gap: 5px;
     }
 }
+
+/* .Sidebar {
+    width: 200px; 
+    background: gold;
+    position: absolute; 
+    height: 95vh;
+    padding: 0 30px;
+    transition: all 1s; 
+} */
