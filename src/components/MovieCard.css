@@ -3,30 +3,70 @@
     flex-direction: column;
     /* position: relative; */
     /* flex-direction: column; */
-    background: hsl(0, 0%, 98%);   
+    /* background: hsl(0, 0%, 98%);    */
+      background: rgb(36, 42, 48);
+
     /* background: hwb(0 28% 72% / 0.992); */
     /* text-align: center;  */
     /* border-radius: 12px; */
-    padding: 5px;
+    padding: 1px;
     align-content: flex-start;
     /* border: 1px solid black; */
-    box-shadow: 0 14px 28px #7b7b7b, 
-    0 10px 10px rgb(126, 126, 126); 
+    box-shadow: 0px 5px 8px #bc2a2a, 
+    0 10px 10px rgb(193, 84, 84); 
     transition: .2s;
-    margin: 7px;
+    margin: 10px;
 }
+
+
 
 .movieCard .bellowText {
     display: flex;
-    flex-direction: column;
-    text-align: left;
+    /* flex-direction: column; */
+    /* text-align: left; */
+    justify-content: space-between;
+    align-items: center;
+    /* width: auto; */
+    color: white;
+}
+
+.heartIcon {
+    margin-top: 5px;
+}
+
+.eye {
+    margin-top: 17px
+}
+.rightBellowText {
+    display: flex;
+    justify-content: space-between;
+    /* width: auto; */
+    margin-right: 10px;
+    flex-grow: 0.1;
+}
+
+.leftBellowText {
+    text-wrap: wrap;
+    width: 125px;
+}
+
+.likeComponent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid gold; */
+    width: 65px;
+    flex-direction: row;
+    margin-right: 10px;
+    color: white;
 }
 
 .moviePoster img {
     max-width: 100%;
     height: auto;
-    object-fit: contain;
-    /* object-fit:contain; */
+    object-fit: fill;
+    height: 425px;
+    /* border: 2px solid gold; */
 }
 
 .movieCard:hover { 
@@ -35,3 +75,23 @@
     /* transform: translate(0px, -8px); */
 }
 
+.movieTitle {
+    font-family: schibe;
+    color: white;
+}
+
+.moveVote { 
+    font-family: schibe;
+    color: #638ea8;
+}
+
+@font-face {
+  font-family: schibe;
+  src: url(../src/assets/SchibstedGrotesk-Regular.ttf);
+}
+
+
+@font-face {
+  font-family: schibeBold;
+  src: url(../assets/SchibstedGrotesk-ExtraBold.ttf);
+}
