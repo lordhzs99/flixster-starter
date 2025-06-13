@@ -8,9 +8,7 @@ import { BsFilm } from "react-icons/bs";
 import LikedMovies from './components/LikedMovies.jsx';
 import WatchedMovies from './components/WatchedMovies.jsx';
 import { FiAlignJustify } from "react-icons/fi";
-
-
-// const apiKey = import.meta.env.VITE_API_KEY;
+ const apiKey = import.meta.env.VITE_API_KEY;
 
 const Pages = {
   HOME: 'home',
@@ -90,7 +88,7 @@ const App = () => {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWJmNjJiZTIwMzQ4MWVmODUzNGFkODdiOGM3NjcxMyIsIm5iZiI6MTc0OTUxMTI2NC45MjIsInN1YiI6IjY4NDc2YzYwMmU5ZmRhNWQyNTIwNjZjOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.op9N2XnkjGr8ByMVgdtBoY594JeEz-XLpj5PDKD9IrY'
+          Authorization: `Bearer ${apiKey}`
         }
       };
       fetch(url, options)
@@ -115,7 +113,7 @@ const App = () => {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWJmNjJiZTIwMzQ4MWVmODUzNGFkODdiOGM3NjcxMyIsIm5iZiI6MTc0OTUxMTI2NC45MjIsInN1YiI6IjY4NDc2YzYwMmU5ZmRhNWQyNTIwNjZjOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.op9N2XnkjGr8ByMVgdtBoY594JeEz-XLpj5PDKD9IrY'
+      Authorization: `Bearer ${apiKey}`
     }
   };
   fetch(url, options)
@@ -140,7 +138,7 @@ const App = () => {
       method: 'GET',
       headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWJmNjJiZTIwMzQ4MWVmODUzNGFkODdiOGM3NjcxMyIsIm5iZiI6MTc0OTUxMTI2NC45MjIsInN1YiI6IjY4NDc2YzYwMmU5ZmRhNWQyNTIwNjZjOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.op9N2XnkjGr8ByMVgdtBoY594JeEz-XLpj5PDKD9IrY'
+        Authorization: `Bearer ${apiKey}`
       }
     };
     fetch(url, options)
@@ -153,6 +151,8 @@ const App = () => {
     }
     fetchVarRef.current += 1;
   }, [pageNumber]);
+
+  
 
 
 // ------------------ FINAL INITIAL FETCH --------------------

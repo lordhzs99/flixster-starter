@@ -2,6 +2,7 @@ import './Modal.css'
 import { useEffect, useState } from 'react'
 import notFoundImg from '../assets/not_found.jpg'
 import notFoundVideo from '../assets/notFoundVideo.png'
+ const apiKey = import.meta.env.VITE_API_KEY;
 
 export default function Modal(props) {
     if (!props.open) return null;
@@ -14,7 +15,7 @@ export default function Modal(props) {
         method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWJmNjJiZTIwMzQ4MWVmODUzNGFkODdiOGM3NjcxMyIsIm5iZiI6MTc0OTUxMTI2NC45MjIsInN1YiI6IjY4NDc2YzYwMmU5ZmRhNWQyNTIwNjZjOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.op9N2XnkjGr8ByMVgdtBoY594JeEz-XLpj5PDKD9IrY'
+            Authorization: `Bearer ${apiKey}`
         }
         };
 
