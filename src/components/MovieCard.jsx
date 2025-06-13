@@ -7,6 +7,7 @@ import { BsEye } from "react-icons/bs";
 import { BsEyeSlash } from "react-icons/bs";
 import getRanLikeCount from '../utils/helpers.js'
 import { BsFillHeartFill } from "react-icons/bs";
+const apiKey = import.meta.env.VITE_API_KEY;
 
 
 export default function MovieCard(props) {
@@ -22,7 +23,7 @@ export default function MovieCard(props) {
             method: 'GET',
             headers: {
                 accept: 'application/json',
-                Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWJmNjJiZTIwMzQ4MWVmODUzNGFkODdiOGM3NjcxMyIsIm5iZiI6MTc0OTUxMTI2NC45MjIsInN1YiI6IjY4NDc2YzYwMmU5ZmRhNWQyNTIwNjZjOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.op9N2XnkjGr8ByMVgdtBoY594JeEz-XLpj5PDKD9IrY'
+                Authorization: `Bearer ${apiKey}`
             }
         };
         fetch(url, options)
