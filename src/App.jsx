@@ -152,6 +152,28 @@ const App = () => {
     fetchVarRef.current += 1;
   }, [pageNumber]);
 
+  //
+   useEffect(() => {
+  if (fetchVarRef.current > 0){
+    const url = 'https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=' + pageNumber;
+    const options = {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+        Authorization: `Bearer ${apiKey}`
+      }
+    };
+    fetch(url, options)
+      .then(res => res.json())
+      .then(json => {
+        setMovieList([...json.results.map(movie => ({...movie, isLiked: false, isSeen: false}))]);
+      })
+      .catch(err => console.error(err));
+      console.log("pageNumber", pageNumber); 
+    }
+    fetchVarRef.current += 1;
+  }, []);
+
   
 
 
