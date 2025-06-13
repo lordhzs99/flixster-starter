@@ -4,7 +4,7 @@ Submitted by: Hector Zambrano Serrano
 
 Estimated time spent: 30 hours spent in total
 
-Deployed Application (**required**): [Flixster Deployed Site](ADD_LINK_HERE)
+Deployed Application (**required**): [Flixster Deployed Site](https://flixster-starter-yn3z.onrender.com)
 
 ### Application Features
 
